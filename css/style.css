@@ -1,0 +1,246 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TEXTOS */
+
+h1{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h2{
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: xx-large;
+}
+
+h3{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    font-size: x-large;
+}
+
+h4{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    font-size: x-large;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+p{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    font-size: medium;
+}
+    
+
+/* BOTONES */
+
+button{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #B2A4FF;
+    color: black;
+    border: none;
+    padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+/* HEADER */
+
+header{
+    background-color: #B2A4FF;
+    position: sticky;
+    width: 100%;
+    height: 100px;
+    top:0px;
+}
+
+.header-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+
+.navbar{
+    font-family:'Ubuntu', sans-serif;
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+/* SECTIONS */
+
+
+.home-slider1{
+    background-image: url(../assets/img/img-slider1.jpg);
+    height: 500px;
+    background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  /* opacity: 50%; */
+}
+
+.slider1-cta{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+/* PAGE SERVICIOS */
+
+.servicios-container{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 300px;
+}
+
+.servicio{
+    display: flex;
+    overflow: hidden;
+    width: 400px;
+    /* border: 2px solid black; */
+    /* box-shadow: 3px 3px 5px grey; */
+    margin: 20px;
+}
+
+.servicio img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.dis-web{
+    background-image: url(../assets/img/img-servicios-web.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    margin: 20px 20px 20px 20px;
+}
+
+.dis-marca{
+    background-image: url(../assets/img/img-servicios-marca.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    margin: 20px 20px 20px 20px;
+}
+
+.dis-redes{
+    background-image: url(../assets/img/img-servicios-redes.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    margin: 20px 20px 20px 20px;
+}
+
+/* PAGINA BIO */
+
+.bio-container{
+    display: flex;
+    flex-direction: row;
+    /* justify-content:center; */
+    /* width: 100%; */
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.bio-container img{
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.bio-container p{
+    /* width: 50%; */
+    text-align: center;
+    padding-left: 40px;
+}
+
+/* PAGINA CONTACTO */
+
+.contacto-container{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+height: 400px;
+margin-top: 40px;
+margin-bottom: 40px;
+}
+
+.contacto-container img{
+    object-fit: contain;
+    overflow: hidden;
+}
+
+/* PAGINA TIENDA */
+
+.title-tienda{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.tienda-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tienda-container img{
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.desc-prod{
+    text-align: center;
+}
+
+/* FOOTER */
+footer{
+    background-color: black;
+    position:absolute;
+    width: 100%;
+    height: 100px;
+}
+
+.menu-footer{
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+
+.footer a{
+    color: white;
+}
+
+
+
+
+

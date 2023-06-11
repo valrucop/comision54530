@@ -1,0 +1,13 @@
+.contacto-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 400px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    }
+    
+    .contacto-container img{
+        object-fit: contain;
+        overflow: hidden;
+    }

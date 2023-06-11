@@ -1,0 +1,15 @@
+.home-slider1{
+    background-image: url(../assets/img/img-slider1.jpg);
+    height: 500px;
+    background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  /* opacity: 50%; */
+}
+
+.slider1-cta{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 200px;
+}

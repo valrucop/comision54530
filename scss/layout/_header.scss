@@ -1,0 +1,26 @@
+header{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #B2A4FF;
+    padding-bottom: 5px;
+}
+header div img{
+    width: 100px;
+}
+nav{
+    display: flex;
+    align-items: center;    
+    padding-right: 10px;
+}
+
+.navbar{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+
+}
+.navbar li a{
+    font-family:'Ubuntu', sans-serif;
+    text-decoration: none;
+    color: black;
+}

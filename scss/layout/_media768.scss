@@ -1,0 +1,111 @@
+@media (max-width:768px){
+    header{
+    background-color: #B2A4FF;
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio-grids{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+    }
+    
+    .portfolio-grids h2{
+        background-color: black;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        text-align: center;
+        padding-top: 10px;
+        width: 100%;
+        height: 50px;
+        grid-row-start: 1;
+
+    }
+    
+    .portfolio-grids h3{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding-top: 40px;
+    grid-row-start: 1;
+    width: 100%;
+    height: 50px;
+    padding-top: 70px;
+    }
+    
+    .portfolio-grids p{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        padding-top: 150px;
+        grid-row-start: 1;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .portfolio-grids .img1{
+        display: none;
+    }
+    
+    .portfolio-grids .img2{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        width: 100%;
+        object-fit: scale-down;
+        padding-top: 40px;
+        margin-bottom: 25px;
+    }
+    
+    .portfolio-grids .img3{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .portfolio-grids .img4{
+        display: none;
+    }
+
+    .bio-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "p1"
+        "img1"
+        "p2"
+        "img2"
+        ;
+    }
+    
+    .bio-container .p1{
+        grid-area: p1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .bio-container .p2{
+        grid-area: p2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    
+    .bio-container .img1{
+       grid-area: img1;
+    }
+    
+    .bio-container .img2{
+        grid-area: img2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+}

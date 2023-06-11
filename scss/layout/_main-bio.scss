@@ -1,0 +1,42 @@
+.bio-container{
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.bio-container .p1{
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding-top: 100px;
+}
+
+.bio-container .p2{
+    grid-column-start: 7;
+    grid-column-end: 11;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    padding-top: 10px;
+}
+
+
+.bio-container .img1{
+   grid-column-start: 7;
+   grid-column-end: 11;
+   grid-row-start: 1;
+   grid-row-end: 6;
+   width: 100%;
+   object-fit: fill;
+   padding-top: 10px;
+}
+
+.bio-container .img2{
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    width: 100%;
+    object-fit: contain;
+    padding-top: 20px;
+ }

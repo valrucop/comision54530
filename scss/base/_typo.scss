@@ -1,14 +1,16 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;1,700&display=swap');
 
 /* TEXTOS */
 
 h1{
     font-family: 'Ubuntu', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
 }
 
 h2{
     font-family: 'Ubuntu', sans-serif;
-    color: white;
+    color: $color-principal;
     font-size: xx-large;
 }
 
@@ -26,7 +28,8 @@ h4{
     font-size: x-large;
 }
 a{
-    color: black;
+    color: $color-principal;
+    font-family: 'Ubuntu', sans-serif;
     text-decoration: none;
 }
 

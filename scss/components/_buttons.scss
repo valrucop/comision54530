@@ -5,8 +5,15 @@ button{
     background-color: #B2A4FF;
     color: black;
     border: none;
+    border-radius: 10px;
     padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    &:hover{
+      background-color: $color-principal;
+      color: $color-terciario;
+    }
 }
+
+

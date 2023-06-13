@@ -1,5 +1,6 @@
+/*
 footer{
-    background-color: black;
+    background-color: $color-principal;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -9,16 +10,44 @@ footer{
 
 
 .menu-footer{
-    list-style: none;
-    font-family: 'Ubuntu', sans-serif;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 10px;
-    padding-top: 30px;
-}
+     list-style: none;
+     font-family: 'Ubuntu', sans-serif;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-evenly;
+     gap: 10px;
+     padding-top: 30px;
+ }
 
 .footer a{
-    color: white;
+     color: $color-terciario;
+ }
+ */
+
+footer{
+    background-color: $color-principal;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    ul{
+        list-style: none;
+        font-family: 'Ubuntu', sans-serif;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 10px;
+        padding-top: 30px;
+        li{
+            a{
+                color: $color-terciario;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
 }

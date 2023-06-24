@@ -42,7 +42,7 @@ p {
   font-size: medium; }
 
 /* BOTONES */
-button {
+.button {
   font-family: 'Ubuntu', sans-serif;
   background-color: #B2A4FF;
   color: black;
@@ -52,7 +52,7 @@ button {
   text-align: center;
   text-decoration: none;
   font-size: 16px; }
-  button:hover {
+  .button:hover {
     background-color: black;
     color: white; }
 
@@ -124,7 +124,8 @@ header {
     flex-direction: column;
     flex: 50%;
     margin: 10px;
-    border: 5px solid #B2A4FF; }
+    border: 5px solid #B2A4FF;
+    box-shadow: 2px 7px 24px -8px rgba(138, 135, 138, 0.68); }
     .service-cards .card .contenido, .bio-container .card .card .contenido {
       flex-grow: 1;
       flex-shrink: 1; }
@@ -192,7 +193,8 @@ header {
     flex-direction: column;
     flex: 50%;
     margin: 10px;
-    border: 5px solid #B2A4FF; }
+    border: 5px solid #B2A4FF;
+    box-shadow: 2px 7px 24px -8px rgba(138, 135, 138, 0.68); }
     .service-cards .card .contenido, .bio-container .card .card .contenido {
       flex-grow: 1;
       flex-shrink: 1; }
@@ -206,7 +208,8 @@ header {
         margin-bottom: 10px;
         display: block;
         margin-right: auto;
-        margin-left: auto; }
+        margin-left: auto;
+        border-radius: 20px; }
   .service-cards .card-cta a, .bio-container .card .card-cta a {
     display: block;
     background-color: #B2A4FF;
@@ -284,7 +287,7 @@ header {
   margin-bottom: 40px; }
   .contacto-container img {
     object-fit: contain;
-    width: 25%;
+    width: 40%;
     overflow: hidden; }
 
 /*
@@ -333,6 +336,19 @@ footer {
       color: white; }
       footer ul li a:hover {
         text-decoration: underline; }
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  margin-top: 10px;
+  margin-bottom: 40px; }
+  .error-container img {
+    object-fit: contain;
+    overflow: hidden;
+    width: 20%; }
 
 @media (max-width: 768px) {
   header {

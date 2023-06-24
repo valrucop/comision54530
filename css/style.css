@@ -5,7 +5,7 @@
   box-sizing: border-box; }
 
 html {
-  height: 100%; }
+  height: 100vh; }
 
 /* TEXTOS */
 h1 {
@@ -207,51 +207,21 @@ header {
         display: block;
         margin-right: auto;
         margin-left: auto; }
-  .service-cards .card-cta, .bio-container .card .card-cta {
-    background-color: white;
+  .service-cards .card-cta a, .bio-container .card .card-cta a {
+    display: block;
+    background-color: #B2A4FF;
     padding: 10px;
     text-align: center; }
-
-.bio-container {
-  display: grid;
-  grid-template-columns: repeat(11, 1fr);
-  grid-template-rows: repeat(6, 1fr); }
-  .bio-container .p1 {
-    grid-column-start: 2;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    padding-top: 100px; }
-  .bio-container .p2 {
-    grid-column-start: 7;
-    grid-column-end: 11;
-    grid-row-start: 5;
-    grid-row-end: 6;
-    padding-top: 10px; }
-  .bio-container .img1 {
-    grid-column-start: 7;
-    grid-column-end: 11;
-    grid-row-start: 1;
-    grid-row-end: 6;
-    width: 100%;
-    object-fit: fill;
-    padding-top: 10px; }
-  .bio-container .img2 {
-    grid-column-start: 2;
-    grid-column-end: 6;
-    grid-row-start: 3;
-    grid-row-end: 6;
-    width: 100%;
-    object-fit: contain;
-    padding-top: 20px; }
+    .service-cards .card-cta a:hover, .bio-container .card .card-cta a:hover {
+      background-color: black;
+      color: white; }
 
 .bio-container {
   display: flex; }
   .bio-container .card {
     flex-direction: column;
     flex: 50%;
-    margin: 10px;
-    border: 5px solid #B2A4FF; }
+    margin: 10px; }
     .bio-container .card .contenido {
       flex-grow: 1;
       flex-shrink: 1; }
@@ -261,75 +231,60 @@ header {
         margin-bottom: 10px;
         display: block;
         margin-right: auto;
-        margin-left: auto; }
+        margin-left: auto;
+        border-radius: 20px; }
   .bio-container .card-cta {
     background-color: white;
     padding: 10px;
     text-align: center; }
 
-.portfolio-grids {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(7, 1fr); }
-  .portfolio-grids h2 {
-    color: white;
-    background-color: black;
-    grid-column-start: 1;
-    grid-column-end: 9;
-    text-align: center;
-    padding-top: 100px;
-    height: 200px; }
-  .portfolio-grids h3 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    padding-top: 40px;
-    grid-row-start: 2;
-    grid-row-end: 3; }
-  .portfolio-grids p {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    padding-top: 150px;
-    grid-row-start: 2;
-    grid-row-end: 3; }
-  .portfolio-grids .img1 {
-    grid-column-start: 3;
-    grid-column-end: 9;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
-  .portfolio-grids .img2 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 4;
-    grid-row-end: 8;
-    width: 100%;
-    object-fit: contain; }
-  .portfolio-grids .img3 {
-    grid-column-start: 4;
-    grid-column-end: 9;
-    grid-row-start: 4;
-    grid-row-end: 6;
-    width: 100%;
-    object-fit: cover; }
-  .portfolio-grids .img4 {
-    grid-column-start: 1;
-    grid-column-end: 9;
-    grid-row-start: 6;
-    grid-row-end: 8;
-    width: 100%;
-    object-fit: cover; }
+.portfolio-cards {
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px; }
+  .portfolio-cards .card {
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    width: 500px;
+    margin: 10px;
+    border: 3px solid black;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 2px 7px 24px -8px rgba(138, 135, 138, 0.68); }
+    .portfolio-cards .card .contenido {
+      flex-grow: 1;
+      flex-shrink: 1; }
+      .portfolio-cards .card .contenido h2 {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 20px; }
+      .portfolio-cards .card .contenido div img {
+        width: 50%;
+        height: auto;
+        margin-bottom: 10px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto; }
+  .portfolio-cards .card-cta a {
+    display: block;
+    background-color: #B2A4FF;
+    padding: 10px;
+    text-align: center; }
+    .portfolio-cards .card-cta a:hover {
+      background-color: black;
+      color: white; }
 
 .contacto-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 400px;
   margin-top: 40px;
   margin-bottom: 40px; }
   .contacto-container img {
     object-fit: contain;
+    width: 25%;
     overflow: hidden; }
 
 /*
@@ -384,82 +339,19 @@ footer {
     background-color: #B2A4FF;
     flex-direction: column;
     align-items: center; }
-  .portfolio-grids {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: center; }
-  .portfolio-grids h2 {
-    background-color: black;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    text-align: center;
-    padding-top: 10px;
-    width: 100%;
-    height: 50px;
-    grid-row-start: 1; }
-  .portfolio-grids h3 {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    padding-top: 40px;
-    grid-row-start: 1;
-    width: 100%;
-    height: 50px;
-    padding-top: 70px; }
-  .portfolio-grids p {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    padding-top: 150px;
-    grid-row-start: 1;
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px; }
-  .portfolio-grids .img1 {
-    display: none; }
-  .portfolio-grids .img2 {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 4;
-    width: 100%;
-    object-fit: scale-down;
-    padding-top: 40px;
-    margin-bottom: 25px; }
-  .portfolio-grids .img3 {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 5;
-    width: 100%;
-    object-fit: cover; }
-  .portfolio-grids .img4 {
-    display: none; }
+  .service-cards, .service-cards .card, .bio-container .card {
+    flex-direction: column; }
   .bio-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "p1" "img1" "p2" "img2"; }
-  .bio-container .p1 {
-    grid-area: p1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1px; }
-  .bio-container .p2 {
-    grid-area: p2;
-    display: flex;
-    justify-content: center;
+    flex-direction: column; }
+  .portfolio-cards {
+    flex-direction: column;
     align-items: center; }
-  .bio-container .img1 {
-    grid-area: img1; }
-  .bio-container .img2 {
-    grid-area: img2;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  footer {
+    .portfolio-cards .card {
+      width: 90%; }
+  footer ul {
     flex-direction: column;
     align-items: center; } }
 
 @media (max-width: 1024px) {
-  header {
-    background-color: yellow; } }
+  .service-cards, .service-cards .card, .bio-container .card {
+    flex-direction: column; } }

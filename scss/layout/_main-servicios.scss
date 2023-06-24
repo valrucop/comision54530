@@ -78,9 +78,14 @@
         }
         }
       }
-      .card-cta{
-        background-color: $color-terciario;
+      .card-cta a{
+        display: block;
+        background-color: $color-secundario;
         padding: 10px;
         text-align: center;
+        &:hover{
+            background-color: $color-principal;
+            color: $color-terciario;
       }
     }
+  }

@@ -4,10 +4,3 @@
     align-items: center;
     gap: 20px;
 }
-
-@mixin grids($col,$row,$gap){
-    display: grid;
-    grid-template-columns: $col;
-    grid-template-rows: $row;
-    gap: $gap;
-}

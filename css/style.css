@@ -8,9 +8,6 @@ body {
   position: relative;
   min-height: 100vh; }
 
-main {
-  margin-bottom: 40px; }
-
 /* TEXTOS */
 h1 {
   font-family: 'Ubuntu', sans-serif;
@@ -368,7 +365,9 @@ footer {
     flex-direction: column;
     align-items: center; }
     .portfolio-cards .card {
-      width: 90%; } }
+      width: 90%; }
+  footer {
+    flex-direction: row; } }
 
 @media (max-width: 1024px) {
   .service-cards, .service-cards .card, .bio-container .card {
